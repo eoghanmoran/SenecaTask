@@ -1,38 +1,95 @@
+* {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.question-heading {
+  margin: 0;
+  padding-top: 20px;
+  color: white;
+  text-shadow: 0.5px 0.5px 0.8px #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.incorrect-answer-background {
+  background: linear-gradient(180deg, #F6B868 0%, #EE6B2D 100%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.correct-answer-background {
+  background: linear-gradient(180deg, #76E0C2 0%, #59CADA 100%);
+}
+
+.result {
+  color: white;
+  padding: 20px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+/*//////// Options Styling //////////*/
+
+.options-div {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 5rem;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.answer-div {
+  border-radius: 100px;
+  border: 1px solid white;
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.answer {
+  padding: 15px 0;
+  border-radius: 100px;
+  width: 250px;
+  font-size: 17px;
+}
+
+.highlighted {
+  color: rgb(70, 70, 70);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 100px;
+  width: 250px;
+  ;
+  text-shadow: 0.1px 0.1px 0.2px #000000;
+  font-weight: 550;
+  letter-spacing: 0.8px;
+}
+
+.non-highlighted div {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 520px) {
+  .answer-div {
+    width: 310px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .answer {
+    width: 155px
+  }
+
+  .highlighted {
+    letter-spacing: 0.5px;
   }
 }
