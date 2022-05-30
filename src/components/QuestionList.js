@@ -1,11 +1,11 @@
 const Questions = [
     {
-        question: 'Who is the greatest?',
+        question: 'What are the ideal conditions inside an office?',
         answers: [
-            [{ answer: 'Tiger Woods', isCorrect: true }, { answer: 'Jack Nicklaus', isCorrect: false }],
-            [{ answer: 'Lewis Hamilton', isCorrect: false }, { answer: 'Max Verstappen', isCorrect: true }],
-            [{ answer: 'Novak Djokovic', isCorrect: true }, { answer: 'Roger Federer', isCorrect: false }],
-            [{ answer: 'Christiano Ronaldo', isCorrect: false }, { answer: 'Lionel Messi', isCorrect: true }]
+            [{ answer: 'Good Pay', isCorrect: true }, { answer: 'Bad Pay', isCorrect: false }],
+            [{ answer: 'Lots of meetings', isCorrect: false }, { answer: 'Less Meetings', isCorrect: true }],
+            [{ answer: 'Free Coffee', isCorrect: true }, { answer: 'Expensive Coffee', isCorrect: false }],
+            [{ answer: 'Bear in office', isCorrect: false }, { answer: 'Dog in Office', isCorrect: true }]
 
 
         ]
