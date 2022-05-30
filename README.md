@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+## Limitations 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Application does not support 3 possible answers
 
 ## Available Scripts
 
